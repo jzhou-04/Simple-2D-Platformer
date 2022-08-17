@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3447878718795647432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3447878718795647438}
+  - component: {fileID: 3447878718795647437}
+  - component: {fileID: -6107597800364201237}
+  m_Layer: 0
+  m_Name: Vine Boss Controller End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3447878718795647438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447878718795647432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.48, y: -0.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &3447878718795647437
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447878718795647432}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &-6107597800364201237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447878718795647432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f16c3f3044b1d42ae1d6682be3d094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialWaitTime: 4
+  stageOneLength: 10
+  stageOneSpawnInterval:
+  - 2
+  - 4
+  stageTwoLength: 20
+  stageTwoSpawnInterval:
+  - 1.5
+  - 3
+  stageThreeLength: 50
+  stageThreeSpawnInterval:
+  - 0.2
+  - 0.5
+  yRange:
+  - -5.47
+  - 2.79
+  xValues:
+  - 73.42
+  - 85.67
+  warningTime: 0.8
+  vineSpawnTime: 1
+  moveSpeed: 45
+  damage: 15
+  vineSpawner: {fileID: 6949465231155780985, guid: 9cca31cda4052364d81b50ece53c1783,
+    type: 3}
+  vine: {fileID: 5410411527054334679, guid: 40bcd61bbae0f6b4892bfc875819d5f4, type: 3}
+  dummyPoint: {fileID: 1947110857173283640, guid: 884795718cbee334ca1331a6369fad2a,
+    type: 3}
+  playerController: {fileID: 0}
